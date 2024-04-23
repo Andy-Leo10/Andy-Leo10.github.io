@@ -11,6 +11,9 @@
     <script src="modal.js"></script>
     <!-- a lorem ipsum generator -->
     <!-- https://www.loremipzum.com/en/text-generator -->
+    <!-- include styles.css -->
+    <link rel="stylesheet" href="css/timeline.css">
+    
 </head>
 
 <body>
@@ -39,7 +42,7 @@
                     <div class="card-content">
 
                         <!-- create tabs: about, resume, portafolio -->
-                        <div class="tabs is-centered is-boxed" style="position: sticky; top: 0;">
+                        <div class="tabs is-centered is-boxed">
                             <ul>
                                 <li class="is-active" data-target="pane-1"><a class="is-size-4">About</a></li>
                                 <li data-target="pane-2"><a class="is-size-4">Resume</a></li>
@@ -47,7 +50,7 @@
                             </ul>
                         </div>
 
-
+                        
                         <!-- create content for each tab -->
                         <div class="tab-content">
 
@@ -65,9 +68,11 @@
 
                             <!-- tab 2 -->
                             <div class="tab-pane" id="pane-2" style="display: none;">
-                                <!-- https://wikiki.github.io/components/timeline/ -->
+                                <!-- https://www.w3schools.com/howto/howto_css_timeline.asp -->
                                 <div class="block">
-                                    TIMELINE
+                                    <div id="resumeContainer">
+                                        <!-- Resume will be loaded here!!! EYE -->
+                                    </div>
                                 </div>
                             </div>
                             <!-- end of tab 2 -->
@@ -156,7 +161,7 @@
     <script src="js/loadProfile.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/loadAbout.js"></script>
-
+    <script src="js/loadResume.js"></script>
 
 </body>
 

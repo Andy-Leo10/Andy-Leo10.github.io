@@ -1,9 +1,9 @@
-// loadProfile.js
+// loadResume.js
 
 window.addEventListener('load', function() {
-    fetch('html/profile.html')
+    fetch('html/resume.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('profileContainer').innerHTML = data;
+            document.getElementById('resumeContainer').innerHTML = data;
         });
 });
