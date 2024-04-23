@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <!-- my icons from fontawesome: https://fontawesome.com/search?o=r&m=free -->
+    <script src="https://kit.fontawesome.com/ddd952fabc.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include the modal.js file -->
+    <script src="modal.js"></script>
+</head>
+
+<body>
+
+
+
+    <!-- divide the space in 2 sides for my portafolio -->
+    <div class="columns">
+
+
+        <!-- first column -->
+        <div class="column is-3 has-text-centered">
+            <div class="block py-4 pl-4">
+                <div id="profileContainer">
+                    <!-- Profile will be loaded here!!! EYE -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- second column -->
+        <div class="column">
+            <div class="block py-4 pr-4">
+                <div class="card">
+                    <div class="card-content">
+                        <!-- create tabs: about, resume, portafolio -->
+                        <div class="tabs is-centered is-boxed">
+                            <ul>
+                                <li class="is-active" data-target="pane-1"><a class="is-size-4">About</a></li>
+                                <li data-target="pane-2"><a class="is-size-4">Resume</a></li>
+                                <li data-target="pane-3"><a class="is-size-4">Portafolio</a></li>
+                            </ul>
+                        </div>
+                        <!-- create content for each tab -->
+                        <div class="tab-content">
+
+
+                            <!-- tab 1 -->
+                            <div class="tab-pane" id="pane-1">
+                                <!-- https://wikiki.github.io/components/timeline/ -->
+                                <div class="block">
+
+                                </div>
+                            </div>
+
+
+                            <!-- tab 2 -->
+                            <div class="tab-pane" id="pane-2" style="display: none;">
+                                <div class="block">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <p>My name is John Doe and I am a web developer. I have been working in the
+                                                industry for
+                                                5 years and
+                                                I
+                                                have experience in HTML, CSS, JavaScript, and PHP. I am also familiar
+                                                with
+                                                frameworks like
+                                                Bootstrap
+                                                and jQuery. I am passionate about creating beautiful and functional
+                                                websites
+                                                that
+                                                help
+                                                businesses
+                                                grow.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- tab 3 -->
+                            <div class="tab-pane" id="pane-3" style="display: none;">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="block">
+                                            <p>
+                                                My name is John Doe and I am a web developer. I have been working in the
+                                                industry for
+                                                5 years and
+                                            </p>
+                                        </div>
+
+                                        <div class="block">
+                                            <div id="modal-container">
+                                                <!-- The modals will be inserted here!!! EYE -->
+                                            </div>
+                                        </div>
+
+                                        <!-- Pagination -->
+                                        <nav class="pagination" role="navigation" aria-label="pagination">
+                                            <div class="block">
+                                                <a class="pagination-previous" id="previous">Previous</a>
+                                                <a class="pagination-next" id="next">Next</a>
+                                            </div>
+                                        </nav>
+
+                                        <script>
+                                            var perPage = 4;
+                                            var currentPage = 1;
+                                            var modals = [];
+
+                                            var modalContainer = document.getElementById('modal-container');
+                                            modals.push(createModal('my-modal-1', 'Modal Title 1', 'Modal 1 content can go here'));
+                                            modals.push(createModal('my-modal-2', 'Modal Title 2', 'Modal 2 content can go here'));
+                                            modals.push(createModal('my-modal-3', 'Modal Title 3', 'Modal 3 content can go here'));
+                                            modals.push(createModal('my-modal-4', 'Modal Title 4', 'Modal 4 content can go here'));
+                                            modals.push(createModal('my-modal-5', 'Modal Title 5', 'Modal 5 content can go here'));
+                                            modals.push(createModal('my-modal-6', 'Modal Title 6', 'Modal 6 content can go here'));
+
+                                            function showPage(page) {
+                                                var start = (page - 1) * perPage;
+                                                var end = start + perPage;
+                                                $('#modal-container').html(modals.slice(start, end).join(''));
+                                            }
+
+                                            $('#previous').click(function () {
+                                                if (currentPage > 1) {
+                                                    currentPage--;
+                                                    showPage(currentPage);
+                                                }
+                                            });
+
+                                            $('#next').click(function () {
+                                                if (currentPage < Math.ceil(modals.length / perPage)) {
+                                                    currentPage++;
+                                                    showPage(currentPage);
+                                                }
+                                            });
+
+                                            showPage(currentPage);
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('.tabs li').click(function () {
+                var tab = $(this).data('target');
+                $('.tabs li').removeClass('is-active');
+                $(this).addClass('is-active');
+                $('.tab-pane').hide();
+                $('#' + tab).show();
+            });
+        });
+    </script>
+
+    <script>
+    window.onload = function() {
+        fetch('profile.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('profileContainer').innerHTML = data;
+            });
+    };
+    </script>
+</body>
+
+</html>
