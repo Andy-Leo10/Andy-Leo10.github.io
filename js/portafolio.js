@@ -61,80 +61,73 @@ function createAndAppendCellModal(container, imageUrl, projectName, extraContent
     cellModal.attachEventListeners();
 }
 
-window.onload = function () {
+// Pagination variables
+var currentPage = 1;
+var itemsPerPage = 9;
+
+// ----------------------------------------------------------------------
+// Array that contains the data for all your CellModals !!!
+import { cellModalData } from './projects-DATA.js';
+// ----------------------------------------------------------------------
+
+function showPage(page) {
+    var start = (page - 1) * itemsPerPage;
+    var end = start + itemsPerPage;
     var cellModalContainer = document.getElementById('modal-container');
 
-    createAndAppendCellModal(
-        cellModalContainer,
-        'https://bulma.io/assets/images/placeholders/96x96.png',
-        'Project 1',
-        'Extra content for Project 1',
-        'content/file1.md',
-        1
-    );
+    // Remove all existing cells
+    while (cellModalContainer.firstChild) {
+        cellModalContainer.removeChild(cellModalContainer.firstChild);
+    }
 
-    createAndAppendCellModal(
-        cellModalContainer,
-        'https://bulma.io/assets/images/placeholders/96x96.png',
-        'Project 2',
-        'Extra content for Project 2',
-        'content/file2.md',
-        2
-    );
+    // Add the cells for the current page
+    for (var i = start; i < end && i < cellModalData.length; i++) {
+        var data = cellModalData[i];
+        createAndAppendCellModal(
+            cellModalContainer,
+            data.imageUrl,
+            data.projectName,
+            data.extraContent,
+            data.mdFile,
+            data.id
+        );
+    }
 
-    createAndAppendCellModal(
-        cellModalContainer,
-        'https://bulma.io/assets/images/placeholders/96x96.png',
-        'Project 3',
-        'Extra content for Project 1',
-        'content/file1.md',
-        3
-    );
+    // Update the pagination component
+    var paginationList = document.getElementById('pagination-list');
+    while (paginationList.firstChild) {
+        paginationList.removeChild(paginationList.firstChild);
+    }
+    for (var i = 1; i <= Math.ceil(cellModalData.length / itemsPerPage); i++) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.className = 'pagination-link' + (i === page ? ' is-current' : '');
+        a.textContent = i;
+        a.addEventListener('click', function() {
+            currentPage = parseInt(this.textContent);
+            showPage(currentPage);
+        });
+        li.appendChild(a);
+        paginationList.appendChild(li);
+    }
+}
 
-    createAndAppendCellModal(
-        cellModalContainer,
-        'https://bulma.io/assets/images/placeholders/96x96.png',
-        'Project 4',
-        'Extra content for Project 2',
-        'content/file2.md',
-        4
-    );
-    // Add more cells and modals as needed
-    createAndAppendCellModal(
-        cellModalContainer,
-        'https://bulma.io/assets/images/placeholders/96x96.png',
-        'Project 5',
-        'Extra content for Project 1',
-        'content/file1.md',
-        5
-    );
+window.onload = function() {
+    showPage(currentPage);
 
-    createAndAppendCellModal(
-        cellModalContainer,
-        'https://bulma.io/assets/images/placeholders/96x96.png',
-        'Project 6',
-        'Extra content for Project 2',
-        'content/file2.md',
-        6
-    );
+    document.getElementById('prev-page').addEventListener('click', function() {
+        if (currentPage > 1) {
+            currentPage--;
+            showPage(currentPage);
+        }
+    });
 
-    createAndAppendCellModal(
-        cellModalContainer,
-        'https://bulma.io/assets/images/placeholders/96x96.png',
-        'Project 7',
-        'Extra content for Project 1',
-        'content/file1.md',
-        7
-    );
-
-    createAndAppendCellModal(
-        cellModalContainer,
-        'https://bulma.io/assets/images/placeholders/96x96.png',
-        'Project 8',
-        'Extra content for Project 2',
-        'content/file2.md',
-        8
-    );
+    document.getElementById('next-page').addEventListener('click', function() {
+        if (currentPage < Math.ceil(cellModalData.length / itemsPerPage)) {
+            currentPage++;
+            showPage(currentPage);
+        }
+    });
 };
 
 
