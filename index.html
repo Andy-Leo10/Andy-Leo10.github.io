@@ -8,12 +8,14 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Include the modal.js file -->
-    <script src="modal.js"></script>
+    <script src="projects.js"></script>
     <!-- a lorem ipsum generator -->
     <!-- https://www.loremipzum.com/en/text-generator -->
-    <!-- include styles.css -->
+    <!-- include .css styles -->
     <link rel="stylesheet" href="css/timeline.css">
-    
+    <link rel="stylesheet" href="css/button.css">
+    <!-- Load the element definition -->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
 </head>
 
 <body>
@@ -50,16 +52,23 @@
                             </ul>
                         </div>
 
-                        
+
                         <!-- create content for each tab -->
                         <div class="tab-content">
 
 
                             <!-- tab 1 -->
                             <div class="tab-pane" id="pane-1">
+                                <!-- <div class="block">
+                                    <div id="aboutContainer"> -->
+                                <!-- About will be loaded here!!! EYE -->
+                                <!-- </div>
+                                </div> -->
                                 <div class="block">
-                                    <div id="aboutContainer">
-                                        <!-- About will be loaded here!!! EYE -->
+                                    <div class="fixed-grid has-3-cols">
+                                        <div id="modal-container" class="grid">
+                                            <!-- The modals will be inserted here!!! EYE -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -67,6 +76,7 @@
 
 
                             <!-- tab 2 -->
+                            <!-- <div class="tab-pane" id="pane-2"> -->
                             <div class="tab-pane" id="pane-2" style="display: none;">
                                 <!-- https://www.w3schools.com/howto/howto_css_timeline.asp -->
                                 <div class="block">
@@ -79,68 +89,13 @@
 
 
                             <!-- tab 3 -->
+                            <!-- <div class="tab-pane" id="pane-3"> -->
                             <div class="tab-pane" id="pane-3" style="display: none;">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="block">
-                                            <p>
-                                                My name is John Doe and I am a web developer. I have been working in the
-                                                industry for
-                                                5 years and
-                                            </p>
-                                        </div>
-
-                                        <div class="block">
-                                            <div id="modal-container">
-                                                <!-- The modals will be inserted here!!! EYE -->
-                                            </div>
-                                        </div>
-
-                                        <!-- Pagination -->
-                                        <nav class="pagination" role="navigation" aria-label="pagination">
-                                            <div class="block">
-                                                <a class="pagination-previous" id="previous">Previous</a>
-                                                <a class="pagination-next" id="next">Next</a>
-                                            </div>
-                                        </nav>
-
-                                        <script>
-                                            var perPage = 4;
-                                            var currentPage = 1;
-                                            var modals = [];
-
-                                            var modalContainer = document.getElementById('modal-container');
-                                            modals.push(createModal('my-modal-1', 'Modal Title 1', 'Modal 1 content can go here'));
-                                            modals.push(createModal('my-modal-2', 'Modal Title 2', 'Modal 2 content can go here'));
-                                            modals.push(createModal('my-modal-3', 'Modal Title 3', 'Modal 3 content can go here'));
-                                            modals.push(createModal('my-modal-4', 'Modal Title 4', 'Modal 4 content can go here'));
-                                            modals.push(createModal('my-modal-5', 'Modal Title 5', 'Modal 5 content can go here'));
-                                            modals.push(createModal('my-modal-6', 'Modal Title 6', 'Modal 6 content can go here'));
-
-                                            function showPage(page) {
-                                                var start = (page - 1) * perPage;
-                                                var end = start + perPage;
-                                                $('#modal-container').html(modals.slice(start, end).join(''));
-                                            }
-
-                                            $('#previous').click(function () {
-                                                if (currentPage > 1) {
-                                                    currentPage--;
-                                                    showPage(currentPage);
-                                                }
-                                            });
-
-                                            $('#next').click(function () {
-                                                if (currentPage < Math.ceil(modals.length / perPage)) {
-                                                    currentPage++;
-                                                    showPage(currentPage);
-                                                }
-                                            });
-
-                                            showPage(currentPage);
-                                        </script>
-                                    </div>
-                                </div>
+                                <!-- <div class="block">
+                                    <div id="modal-container"> -->
+                                <!-- The modals will be inserted here!!! EYE -->
+                                <!-- </div>
+                                </div> -->
                             </div>
                             <!-- end of tab 3 -->
 
@@ -155,7 +110,7 @@
         </div>
         <!-- end of 2nd column -->
     </div>
-
+    <!-- end of columns -->
 
     <!-- Load the Scripts!!! -->
     <script src="js/loadProfile.js"></script>
@@ -166,3 +121,62 @@
 </body>
 
 </html>
+
+
+<!-- VERSION1 of cards -->
+
+<div class="cell">
+    <div class="card" style="background-color: #9e575700;">
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-96x96">
+                        <img style="border-radius: 10%;"
+                            src="https://bulma.io/assets/images/placeholders/96x96.png"
+                            alt="Placeholder image" />
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-5">Project</p>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                    </div>
+                    <button class="button is-primary"
+                        id="open-modal">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- VERSION2 of cards : current -->
+
+<div class="cell">
+    <div class="card" style="background-color: #9e575700;">
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-96x96">
+                        <img style="border-radius: 10%;"
+                            src="https://bulma.io/assets/images/placeholders/96x96.png"
+                            alt="Placeholder image" />
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <button class="button custom-color1" id="open-modal">
+                        <p class="title is-6">Project name</p>
+                    </button>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Phasellus nec iaculis mauris.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
