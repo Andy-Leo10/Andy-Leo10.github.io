@@ -1,23 +1,21 @@
 <link rel="stylesheet" href="css/markdown.css">
 
-# My Modal Title2
+# Example text 2
 
-This is the content of the modal. You can use Markdown syntax to format the text.
+Lorem ipsum dolor sit amet. Ab aspernatur aspernatur ea pariatur doloribus aut internos reprehenderit ex dignissimos numquam 33 dolorem earum hic illum iusto id dolores dolorum. Id pariatur excepturi aut laboriosam voluptate vel vero rerum.
 
-**This is the content of the modal. You can use Markdown syntax to format the text.**
+Aut molestiae molestias id laudantium suscipit rem quia rerum non alias perspiciatis aut velit quia qui galisum quis in velit deleniti. Sit cumque consequatur in atque libero et dolore quibusdam est exercitationem autem quo explicabo eaque et aliquid adipisci aut repudiandae tempore. Et eius omnis et nesciunt commodi a autem sint cum nemo excepturi et officia dicta. Sit dolores inventore sit porro fuga et perspiciatis fuga.
 
-This is the content of the modal. You can use Markdown syntax to format the text.
+## More information 2
 
-- This is the content of the modal. You can use Markdown syntax to format the text.
+Lorem ipsum dolor sit amet. Ab aspernatur aspernatur ea pariatur doloribus aut internos reprehenderit ex dignissimos numquam 33 dolorem earum hic illum iusto id dolores dolorum. Id pariatur excepturi aut laboriosam voluptate vel vero rerum.
 
-## This is the content of the modal. You can use Markdown syntax to format the text.
-
-This is the content of the modal. You can use Markdown syntax to format the text.
+Aut molestiae molestias id laudantium suscipit rem quia rerum non alias perspiciatis aut velit quia qui galisum quis in velit deleniti. Sit cumque consequatur in atque libero et dolore quibusdam est exercitationem autem quo explicabo eaque et aliquid adipisci aut repudiandae tempore. Et eius omnis et nesciunt commodi a autem sint cum nemo excepturi et officia dicta. Sit dolores inventore sit porro fuga et perspiciatis fuga.
 
 ```
-This is the content of the modal. You can use Markdown syntax to format the text.
+solo no hay solución para la muerte. Todo lo demás, hay solución. La vida es bella”. 👏🏼 #CR7 #cristianoronaldo.
 ```
 
-*This is the content of the modal. You can use Markdown syntax to format the text.*
+Lorem ipsum dolor sit amet. Ab aspernatur aspernatur ea pariatur doloribus aut internos reprehenderit ex dignissimos numquam 33 dolorem earum hic illum iusto id dolores dolorum. Id pariatur excepturi aut laboriosam voluptate vel vero rerum.
 
-This is the content of the modal. You can use Markdown syntax to format the text.
+Aut molestiae molestias id laudantium suscipit rem quia rerum non alias perspiciatis aut velit quia qui galisum quis in velit deleniti. Sit cumque consequatur in atque libero et dolore quibusdam est exercitationem autem quo explicabo eaque et aliquid adipisci aut repudiandae tempore. Et eius omnis et nesciunt commodi a autem sint cum nemo excepturi et officia dicta. Sit dolores inventore sit porro fuga et perspiciatis fuga.

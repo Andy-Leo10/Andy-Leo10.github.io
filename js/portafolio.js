@@ -63,7 +63,7 @@ function createAndAppendCellModal(container, imageUrl, projectName, extraContent
 
 // Pagination variables
 var currentPage = 1;
-var itemsPerPage = 9;
+var itemsPerPage = 6;
 
 // ----------------------------------------------------------------------
 // Array that contains the data for all your CellModals !!!
