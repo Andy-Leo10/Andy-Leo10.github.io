@@ -13,7 +13,7 @@ function createCellModal(imageUrl, projectName, extraContent, mdFile, id) {
                             </figure>
                         </div>
                         <div class="media-content">
-                            <button class="button custom-color1" id="open-modal-${id}">
+                            <button class="button custom-color1" id="open-modal-${id}" style="white-space: normal;">
                                 <p class="title is-6">${projectName}</p>
                             </button>
                             <div class="content">
