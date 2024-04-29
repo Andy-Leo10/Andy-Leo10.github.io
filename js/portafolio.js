@@ -26,11 +26,12 @@ function createCellModal(imageUrl, projectName, extraContent, mdFile, id) {
         </div>
 
         <div class="modal" id="modal-${id}">
-            <div class="modal-background"></div>
-            <div class="modal-card-body">
-                <zero-md src="${mdFile}"></zero-md>
+            <div class="modal-background">
+                <div class="modal-card-body" style="width: 100%; height: 100%; box-sizing: border-box;">
+                    <zero-md src="${mdFile}"></zero-md>
+                </div>
+                <button class="modal-close is-large" aria-label="close" id="close-modal-${id}"></button>
             </div>
-            <button class="modal-close is-large" aria-label="close" id="close-modal-${id}"></button>
         </div>
     `;
 

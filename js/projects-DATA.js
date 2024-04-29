@@ -14,7 +14,7 @@ export var cellModalData = [
         imageUrl: 'https://uploads.unchainedrobotics.de/media/products/Product_images2FUR3e_3_2d71727a.jpg',
         projectName: 'Manipulation and Perception',
         extraContent: 'The UR3e robot is used to manipulate objects after detecting them with a RGBD camera.',
-        mdFile: 'content/file1.md',
+        mdFile: 'content/file2.md',
         id: 2
     },
     // ------------------------------------------------------------------
@@ -62,7 +62,7 @@ export var cellModalData = [
         imageUrl: 'https://bulma.io/assets/images/placeholders/96x96.png',
         projectName: 'ESCALERINI',
         extraContent: 'Is a robot made for loading and transport of daily use products by stairs in buildings without elevators.',
-        mdFile: 'content/file2.md',
+        mdFile: 'content/file8.md',
         id: 8
     },
     // ------------------------------------------------------------------
