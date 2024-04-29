@@ -122,7 +122,21 @@
     <script src="js/tabs.js"></script>
     <script src="js/loadAbout.js"></script>
     <script src="js/loadResume.js"></script>
-
+<script>
+function toggleVisibility(id) {
+    var element = document.getElementById(id);
+    var title = document.querySelector(`h1[onclick="toggleVisibility('${id}')"]`);
+    var originalTitle = title.getAttribute('data-title');
+    var displayValue = window.getComputedStyle(element).display;
+    if (displayValue === "none") {
+        element.style.display = "block";
+        title.textContent = "▼ " + originalTitle;  // symbol and original title when the content is shown
+    } else {
+        element.style.display = "none";
+        title.textContent = "▶ " + originalTitle;  // symbol and original title when the content is hidden
+    }
+}
+</script>
 </body>
 
 </html>
