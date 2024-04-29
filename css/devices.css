@@ -27,3 +27,25 @@ for the container, a scrollbar will be added */
 /* .tab-pane {
     overflow: auto;
 } */
+
+/* for adjusting the profile content when the screen
+is mobile-phone or desktop size */
+
+/* Mobile styles */
+@media screen and (max-width: 1023px) {
+    .desktop-presentation-card-vertical {
+        display: none;
+    }
+    .mobilePhone-presentation-card-horizontal {
+        display: block;
+    }
+}
+/* Desktop styles */
+@media screen and (min-width: 1023px) {
+    .desktop-presentation-card-vertical {
+        display: block;
+    }
+    .mobilePhone-presentation-card-horizontal {
+        display: none;
+    }
+}
