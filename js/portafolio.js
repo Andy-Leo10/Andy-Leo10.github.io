@@ -4,18 +4,20 @@ function createCellModal(imageUrl, projectName, extraContent, mdFile, id) {
         <div class="cell">
             <div class="card" style="background-color: #9e575700;">
                 <div class="card-content">
-                    <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-96x96">
-                                <img style="border-radius: 10%;"
+                    <div class="media" style="display: flex; align-items: center;">
+                        <div class="media-left" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+                            <figure class="image is-128x128" style="width: 100%; height: auto;">
+                                <img style="border-radius: 10%; max-width: 100%; height: auto;"
                                     src="${imageUrl}"
                                     alt="Placeholder image" />
                             </figure>
                         </div>
-                        <div class="media-content">
+                        <div class="media-content" style="flex: 1;">
                             <button class="button custom-color1" id="open-modal-${id}" style="white-space: normal;">
                                 <p class="title is-6">${projectName}</p>
                             </button>
+                            <br> <!-- Add a line break here -->
+                            <br> 
                             <div class="content">
                                 ${extraContent}
                             </div>
