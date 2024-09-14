@@ -23,8 +23,6 @@
 
 <body>
 
-
-
     <!-- divide the space in 2 sides for my portafolio -->
     <div class="columns is-multiline">
 
@@ -53,9 +51,9 @@
                         <!-- create tabs: about, resume, portafolio -->
                         <div class="tabs is-centered is-boxed">
                             <ul>
-                                <li class="is-active" data-target="pane-1"><a class="is-size-4">About</a></li>
+                                <li data-target="pane-1"><a class="is-size-4">About</a></li>
                                 <li data-target="pane-2"><a class="is-size-4">Resume</a></li>
-                                <li data-target="pane-3"><a class="is-size-4">Portafolio</a></li>
+                                <li class="is-active" data-target="pane-3"><a class="is-size-4">Portafolio</a></li>
                             </ul>
                         </div>
 
@@ -65,7 +63,7 @@
 
 
                             <!-- tab 1 -->
-                            <div class="tab-pane" id="pane-1">
+                            <div class="tab-pane" id="pane-1" style="display: none;">
                                 <div class="block">
                                     <div id="aboutContainer">
                                         <!-- About will be loaded here!!! EYE -->
@@ -76,7 +74,6 @@
 
 
                             <!-- tab 2 -->
-                            <!-- <div class="tab-pane" id="pane-2"> -->
                             <div class="tab-pane" id="pane-2" style="display: none;">
                                 <!-- https://www.w3schools.com/howto/howto_css_timeline.asp -->
                                 <div class="block">
@@ -90,7 +87,7 @@
 
                             <!-- tab 3 -->
                             <!-- <div class="tab-pane" id="pane-3"> -->
-                            <div class="tab-pane" id="pane-3" style="display: none;">
+                            <div class="tab-pane" id="pane-3">
                                 <div class="block">
                                     <nav class="pagination" role="navigation" aria-label="pagination">
                                         <a class="pagination-previous" id="prev-page">Previous</a>

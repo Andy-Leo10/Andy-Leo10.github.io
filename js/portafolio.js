@@ -12,13 +12,12 @@ function createCellModal(imageUrl, projectName, extraContent, mdFile, id) {
                                     alt="Placeholder image" />
                             </figure>
                         </div>
-                        <div class="media-content" style="flex: 1;">
+                        <div class="media-content" style="flex: 1; display: flex; flex-direction: column; align-items: center;">
                             <button class="button custom-color1" id="open-modal-${id}" style="white-space: normal;">
                                 <p class="title is-6">${projectName}</p>
                             </button>
-                            <br> <!-- Add a line break here -->
-                            <br> 
-                            <div class="content">
+                            <div class="content" style="text-align: justify;">
+                                <br> <!-- Add a line break here -->
                                 ${extraContent}
                             </div>
                         </div>
@@ -66,11 +65,13 @@ function createAndAppendCellModal(container, imageUrl, projectName, extraContent
 
 // Pagination variables
 var currentPage = 1;
-var itemsPerPage = 6;
+var itemsPerPage = 4;
 
 // ----------------------------------------------------------------------
 // Array that contains the data for all your CellModals !!!
 import { cellModalData } from './projects-DATA.js';
+// Reverse the dataset
+var reversedCellModalData = cellModalData.slice().reverse();
 // ----------------------------------------------------------------------
 
 function showPage(page) {
@@ -84,8 +85,8 @@ function showPage(page) {
     }
 
     // Add the cells for the current page
-    for (var i = start; i < end && i < cellModalData.length; i++) {
-        var data = cellModalData[i];
+    for (var i = start; i < end && i < reversedCellModalData.length; i++) {
+        var data = reversedCellModalData[i];
         createAndAppendCellModal(
             cellModalContainer,
             data.imageUrl,
@@ -101,7 +102,7 @@ function showPage(page) {
     while (paginationList.firstChild) {
         paginationList.removeChild(paginationList.firstChild);
     }
-    for (var i = 1; i <= Math.ceil(cellModalData.length / itemsPerPage); i++) {
+    for (var i = 1; i <= Math.ceil(reversedCellModalData.length / itemsPerPage); i++) {
         var li = document.createElement('li');
         var a = document.createElement('a');
         a.className = 'pagination-link' + (i === page ? ' is-current' : '');
@@ -126,7 +127,7 @@ window.onload = function() {
     });
 
     document.getElementById('next-page').addEventListener('click', function() {
-        if (currentPage < Math.ceil(cellModalData.length / itemsPerPage)) {
+        if (currentPage < Math.ceil(reversedCellModalData.length / itemsPerPage)) {
             currentPage++;
             showPage(currentPage);
         }
