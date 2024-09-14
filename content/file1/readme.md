@@ -3,4 +3,4 @@
 # Bica
 
 Here is a video demonstration of the project:
-<img src="content/file1/pictures/carrito1.gif" alt="Carrito GIF" width="100%">
+<img src="content/file1/pictures/animation.gif" alt="Carrito GIF" width="100%">
