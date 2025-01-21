@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="css/markdown.css">
+<a href="https://github.com/Andy-Leo10/Dijkstra-Planner" target="_blank"><strong> → GO TO GITHUB REPOSITORY</strong></a>
 
 # Dijkstra Planner Plugin
+This project is a ROS2 plugin that implements the Dijkstra algorithm for path planning. The plugin is designed to work with the ROS2 Navigation2 stack. The plugin is implemented in C++ and is based on the nav2_core::GlobalPlanner interface.
 
 Switch to the branch with Dijkstra Planner
 

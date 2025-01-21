@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="css/markdown.css">
+<a href="https://github.com/Andy-Leo10/manipulation_project" target="_blank"><strong> → GO TO GITHUB REPOSITORY</strong></a>
 
 # Manipulation project
+This project uses Moveit2 to control a UR3e robot in a Gazebo simulation. The robot is able to pick and place objects in a warehouse. The project is divided into two parts: Forward Kinematics (FK) and Inverse Kinematics (IK) with Perception. The first part uses a fixed position to pick and place objects. The second part uses perception to detect objects and plan the pick and place actions.
 
 Here is a video demonstration of the project:
 <video width="100%" controls>

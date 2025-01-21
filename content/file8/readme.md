@@ -1,7 +1,8 @@
 <link rel="stylesheet" href="css/markdown.css">
+<a href="https://github.com/Andy-Leo10/citylab_project" target="_blank"><strong> → GO TO GITHUB REPOSITORY</strong></a>
 
-# citylab project | Ros2 with Turtlebot3
-This work include topics, service and action code in ROS2.
+# Citylab Project - Robot Patrol
+This project is a ROS2 implementation of a Turtlebot3 robot that can patrol a given area. The robot choose from its left, right, or forward direction to move to the next direction.
 
 ## Mandatory
 + For compiling

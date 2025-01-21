@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="css/markdown.css">
+<a href="https://github.com/Andy-Leo10/warehouse_project" target="_blank"><strong> → GO TO GITHUB REPOSITORY</strong></a>
 
 # Warehouse project
+This project uses Nav2 for autonomous navigation of a robot in a warehouse. The robot is a RB1 robot and the warehouse is a Gazebo simulation. The project is divided into 4 parts: Mapping, Localization, Navigation, and the RB1 app. The project is developed in ROS2 Galactic.
 
 Here is a video demonstration of the project:
 <video width="100%" controls>

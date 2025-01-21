@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="css/markdown.css">
+<a href="https://github.com/Andy-Leo10/coffee-dispenser-project" target="_blank"><strong> → GO TO GITHUB REPOSITORY</strong></a>
 
 # Coffee dispenser project
+The ur3e robot arm moves coffee cups from a fixed point to a cup holder hole, which is detected using a RGBD camera. The project involves manipulation, perception and web interface.
 
 ## SIMULATED ROBOT
 
