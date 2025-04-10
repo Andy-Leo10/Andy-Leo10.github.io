@@ -11,4 +11,5 @@ For each mode the robot uses something for achieve the goal:
 solve mazes.
 
 Here is a gif demonstration of the project:
+
 <img src="content/file1/pictures/animation.gif" alt="Carrito GIF" width="80%">

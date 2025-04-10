@@ -112,7 +112,15 @@ export var cellModalData = [
         extraContent: 'The ur3e robot arm moves coffee cups from a fixed point to a cup holder hole, which is detected using a RGBD camera.',
         mdFile: 'content/file14/readme.md',
         id: 14
-    },        
+    }, 
+    // ------------------------------------------------------------------
+    {
+        imageUrl: 'content/file15/pictures/animation.gif',
+        projectName: 'Robot Behaviors',
+        extraContent: 'The Rosbot-XL required the design of behaviors so that it has the ability to adapt during the execution of its tasks. This work was done during my internship at Asimovo. Things involved were: realistic simulation (ignition), autonomous navigation(Nav2), AI perception (yolov11), behavior trees (BehaviorTree.ROS2 and Groot2).',
+        mdFile: 'content/file15/readme.md',
+        id: 15
+    },            
     // ------------------------------------------------------------------
     // {
     //     imageUrl: 'https://bulma.io/assets/images/placeholders/96x96.png',
