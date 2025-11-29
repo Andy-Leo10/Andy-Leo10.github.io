@@ -11,7 +11,6 @@ export var cellModalData = [
     },
     // ------------------------------------------------------------------
     {
-        // imageUrl: 'https://sparkle-project.eu/wp-content/uploads/2020/11/evora1.png',
         imageUrl: 'content/miniatures/2_Skynet5Resnet.jpg',
         projectName: 'Orange Quality Control',
         extraContent: 'System for quality control of oranges.',
@@ -20,7 +19,6 @@ export var cellModalData = [
     },
     // ------------------------------------------------------------------
     {
-        // imageUrl: 'https://i0.wp.com/garmentsmerchandising.com/wp-content/uploads/2016/01/wovennnnnnnnnnn.jpg?ssl=1',
         imageUrl: 'content/miniatures/3_loom_inspection.png',
         projectName: 'Fabric Inspector',
         extraContent: 'Automation in detection of defects in fabrics using computer vision and PLC.',
@@ -122,13 +120,29 @@ export var cellModalData = [
         extraContent: 'The Rosbot-XL required the design of behaviors so that it has the ability to adapt during the execution of its tasks. This work was done during my internship at Asimovo. Things involved were: realistic simulation (ignition), autonomous navigation(Nav2), AI perception (yolov11), behavior trees (BehaviorTree.ROS2 and Groot2).',
         mdFile: 'content/file15/readme.md',
         id: 15
-    },            
+    },
+    // ------------------------------------------------------------------
+    {
+        imageUrl: 'content/miniatures/16_zox.png',
+        projectName: 'Restaurant 3.0 & Host',
+        extraContent: 'LuckiBot Pro do the tasks that a waiter performs in a restaurant. Nova and Mini robots, perform the tasks of a host in a restaurant.',
+        mdFile: 'content/file16/readme.md',
+        id: 16
+    },
+    // ------------------------------------------------------------------
+    {
+        imageUrl: 'content/miniatures/17_kalman_kit.png',
+        projectName: 'Kalman\'s Kit',
+        extraContent: 'Educational robotics kit to learn how a robot is built, micro-ROS and ROS2 concepts. It is a differential robot with autonomous navigation capabilities.',
+        mdFile: 'content/file17/readme.md',
+        id: 17
+    },        
     // ------------------------------------------------------------------
     // {
     //     imageUrl: 'https://bulma.io/assets/images/placeholders/96x96.png',
     //     projectName: 'PROJECT NAME',
     //     extraContent: 'Extra content for Project 99',
-    //     mdFile: 'PATH/FILE.md',
+    //     mdFile: 'content/file99/readme.md',
     //     id: 99
     // },
 ];
