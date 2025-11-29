@@ -11,7 +11,8 @@ export var cellModalData = [
     },
     // ------------------------------------------------------------------
     {
-        imageUrl: 'https://sparkle-project.eu/wp-content/uploads/2020/11/evora1.png',
+        // imageUrl: 'https://sparkle-project.eu/wp-content/uploads/2020/11/evora1.png',
+        imageUrl: 'content/miniatures/2_Skynet5Resnet.jpg',
         projectName: 'Orange Quality Control',
         extraContent: 'System for quality control of oranges.',
         mdFile: 'content/file2/readme.md',
@@ -19,7 +20,8 @@ export var cellModalData = [
     },
     // ------------------------------------------------------------------
     {
-        imageUrl: 'https://i0.wp.com/garmentsmerchandising.com/wp-content/uploads/2016/01/wovennnnnnnnnnn.jpg?ssl=1',
+        // imageUrl: 'https://i0.wp.com/garmentsmerchandising.com/wp-content/uploads/2016/01/wovennnnnnnnnnn.jpg?ssl=1',
+        imageUrl: 'content/miniatures/3_loom_inspection.png',
         projectName: 'Fabric Inspector',
         extraContent: 'Automation in detection of defects in fabrics using computer vision and PLC.',
         mdFile: 'content/file3/readme.md',
