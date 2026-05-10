@@ -136,6 +136,22 @@ export var cellModalData = [
         extraContent: 'Educational robotics kit to learn how a robot is built, micro-ROS and ROS2 concepts. It is a differential robot with autonomous navigation capabilities.',
         mdFile: 'content/file17/readme.md',
         id: 17
+    },
+    // ------------------------------------------------------------------
+    {
+        imageUrl: 'https://bulma.io/assets/images/placeholders/96x96.png',
+        projectName: 'LiDAR Open Source — kaia.ai',
+        extraContent: 'Added support for the LDROBOT LD19P/D500 LiDAR sensor across the full open-source stack of kaia.ai / Maker\'s Pet: Arduino firmware, LDS library, and ROS2 telemetry.',
+        mdFile: 'content/file_kaia/readme.md',
+        id: 18
+    },
+    // ------------------------------------------------------------------
+    {
+        imageUrl: 'https://bulma.io/assets/images/placeholders/96x96.png',
+        projectName: 'Agricultural Robot — UPAO',
+        extraContent: 'ROS2 simulation of a swerve-drive robot in Gazebo Ignition for blueberry crop fields. Autonomous navigation with Nav2, wheel odometry and EKF-based localization. PROCIENCIA project N° PE501086701-2024.',
+        mdFile: 'content/file18/readme.md',
+        id: 19
     },        
     // ------------------------------------------------------------------
     // {

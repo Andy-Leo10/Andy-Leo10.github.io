@@ -77,3 +77,39 @@ p {
     color: #fff; /* Text color */
     background-color: #08154d; /* Background color */
 }
+
+/* Profile sidebar social links */
+.profile-social {
+    text-align: left;
+    padding-left: 0.25rem;
+}
+.profile-social-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.65rem;
+}
+.profile-social-icon {
+    width: 1.75rem;
+    flex-shrink: 0;
+    text-align: center;
+    color: #ffffff;
+}
+.profile-social-icon a {
+    color: #ffffff;
+}
+.profile-social-text {
+    margin-left: 0.65rem;
+    line-height: 1.4;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+/* Mobile: reduce social text to match tag size */
+@media screen and (max-width: 1023px) {
+    .profile-social-text {
+        font-size: 0.72rem;
+    }
+    .profile-social-icon {
+        width: 1.1rem;
+    }
+}
