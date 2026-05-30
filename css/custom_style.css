@@ -145,6 +145,14 @@ p {
     .tab-content {
         font-size: 0.82rem;
     }
+    /* Section headers (Experience, Education…) */
+    .tab-content .title.is-4 {
+        font-size: 1.1rem !important;
+    }
+    /* Timeline card titles (company/institution names) */
+    .tab-content .title.is-5 {
+        font-size: 0.95rem !important;
+    }
     /* Tab labels: override Bulma's .is-size-4 !important */
     .tabs a.is-size-4 {
         font-size: 1rem !important;
