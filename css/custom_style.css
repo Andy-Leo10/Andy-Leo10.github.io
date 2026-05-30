@@ -76,6 +76,35 @@ p {
 .pagination-previous,.pagination-next {
     color: #fff; /* Text color */
     background-color: #08154d; /* Background color */
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+/* Keep pagination layout stable at any width: numbers left, prev/next right */
+.pagination {
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+}
+.pagination-list {
+    order: 1;
+    flex-grow: 1 !important;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.pagination-list li {
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+}
+.pagination-previous {
+    order: 2;
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+}
+.pagination-next {
+    order: 3;
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
 }
 
 /* Profile sidebar social links */
@@ -111,5 +140,17 @@ p {
     }
     .profile-social-icon {
         width: 1.1rem;
+    }
+    /* Reduce main content font when layout is stacked (non-maximized) */
+    .tab-content {
+        font-size: 0.82rem;
+    }
+    /* Tab labels: override Bulma's .is-size-4 !important */
+    .tabs a.is-size-4 {
+        font-size: 1rem !important;
+    }
+    /* Pagination: override Bulma's own font-size */
+    .pagination {
+        font-size: 0.82rem !important;
     }
 }
