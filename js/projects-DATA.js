@@ -147,7 +147,7 @@ export var cellModalData = [
     },
     // ------------------------------------------------------------------
     {
-        imageUrl: 'https://bulma.io/assets/images/placeholders/96x96.png',
+        imageUrl: 'content/file18/pictures/robot.png',
         projectName: 'Agricultural Robot — UPAO',
         extraContent: 'ROS2 simulation of a swerve-drive robot in Gazebo Ignition for blueberry crop fields. Autonomous navigation with Nav2, wheel odometry and EKF-based localization. PROCIENCIA project N° PE501086701-2024.',
         mdFile: 'content/file18/readme.md',

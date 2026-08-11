@@ -6,6 +6,8 @@
 
 Developed a ROS2-based simulation of a **swerve-drive robot** for autonomous navigation in blueberry crop fields, as part of the PROCIENCIA research project **N° PE501086701-2024** in collaboration with Universidad Privada Antenor Orrego (UPAO) and the Peruvian state.
 
+<img src="content/file18/pictures/robot.png" alt="UPAO agricultural robot" width="100%"/>
+
 ## Objectives
 
 - Simulate a swerve-drive robot in Gazebo Ignition for structured agricultural environments
