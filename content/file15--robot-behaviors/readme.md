@@ -1,19 +1,34 @@
 <link rel="stylesheet" href="css/markdown.css">
 <a href="https://github.com/Andy-Leo10/robot_behaviors" target="_blank"><strong> → GO TO GITHUB REPOSITORY</strong></a>
 
-# Robot behaviors
-The Rosbot-XL required the design of behaviors so that it has the ability to adapt during the execution of its tasks. This work was done during my internship at Asimovo. Things involved were: realistic simulation (ignition), autonomous navigation(Nav2), AI perception (yolov11), behavior trees (BehaviorTree.ROS2 and Groot2).
+# Robot Behaviors — BeachBot (ASIMOVO internship)
 
-## SIMULATED ROBOT
+## Summary
 
-Here is a video demonstration of the project:
+Behavior design for the **Rosbot XL** in a realistic beach-cleaning simulation. This work was done during my internship at **ASIMOVO** in the Netherlands (remote). The robot had to adapt its behavior during execution while performing navigation, perception and task-specific actions in a sandy, unstructured environment.
+
+## What I did
+
+- Designed robot behaviors using behavior trees.
+- Built a realistic simulation in Gazebo Ignition for a beach-like environment.
+- Implemented autonomous navigation with Nav2.
+- Added AI perception for object detection using YOLO.
+- Edited behavior trees with BehaviorTree.ROS2 and Groot2.
+
+## Technologies
+
+- ROS2
+- Gazebo Ignition / Gazebo Sim
+- Nav2
+- YOLO
+- BehaviorTree.ROS2
+- Groot2
+
+## Demonstration
+
 <video width="100%" controls>
   <source src="content/file15--robot-behaviors/pictures/video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-Here is an image of the behavior tree:
-
-![Tree](content/file15--robot-behaviors/pictures/tree.jpg)
-
----
+![Behavior tree](content/file15--robot-behaviors/pictures/tree.jpg)

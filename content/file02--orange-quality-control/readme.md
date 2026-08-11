@@ -1,21 +1,35 @@
 <link rel="stylesheet" href="css/markdown.css">
 
-# Orange quality control (deep learning)
+# Orange Quality Control (Deep Learning)
 
-My team applied transfer learning to pre-trained models to classify the madurity of oranges. This project was part of the final project for digital image processing course and we used Matlab.
+## Summary
 
-Here are some pictures of the results of the project:
+Final project for the digital image processing course. The team applied transfer learning to pre-trained deep learning models to classify the maturity of oranges, reaching 96.4% accuracy with the best performing model.
 
-- The first image shows the architecture of the AlexNet model.
-<img src="content/file02--orange-quality-control/pictures/alexnet.jpg" alt="alexnet" width="480"/>
-<br>
+## What I did
 
-- The second image shows the architecture of the GoogleNet model.
-<img src="content/file02--orange-quality-control/pictures/google.jpg" alt="google" width="480"/>
-<br>
+- Fine-tuned AlexNet, GoogleNet and ResNet architectures for orange maturity classification.
+- Compared model performance and selected ResNet as the final model.
+- Evaluated classification accuracy on a custom dataset.
 
-- The third image shows the architecture of the ResNet model.
-<img src="content/file02--orange-quality-control/pictures/resnet.jpg" alt="resnet" width="480"/>
-<br>
+## Technologies
 
-At the end of the project, we chose the ResNet model because it had the best performance. The model was able to classify the maturity of the oranges with an accuracy of 96.4%.
+- MATLAB
+- Deep Learning
+- Transfer Learning
+- AlexNet, GoogleNet, ResNet
+
+## Results
+
+The ResNet model achieved the best performance, classifying orange maturity with **96.4% accuracy**.
+
+Here are some pictures of the model architectures used:
+
+- AlexNet architecture
+<img src="content/file02--orange-quality-control/pictures/alexnet.jpg" alt="AlexNet architecture" width="480"/>
+
+- GoogleNet architecture
+<img src="content/file02--orange-quality-control/pictures/google.jpg" alt="GoogleNet architecture" width="480"/>
+
+- ResNet architecture
+<img src="content/file02--orange-quality-control/pictures/resnet.jpg" alt="ResNet architecture" width="480"/>

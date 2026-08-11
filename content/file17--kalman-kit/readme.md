@@ -3,11 +3,29 @@
 <br>
 <a href="https://github.com/Kalman-Robotics/kit-kalman-ros2" target="_blank"><strong> → GO TO ROS2 GITHUB REPOSITORY</strong></a>
 
-# Kalman\'s Kit
+# Kalman's Kit
 
-Kalman\'s Kit is a low cost educational robotics kit designed to help users learn about robot construction, micro-ROS, and ROS2 concepts. The kit features a differential drive robot with autonomous navigation capabilities, making it an excellent tool for hands-on learning in robotics.
+## Summary
 
-My role in this project involved integrating the software components of the kit, specifically focusing on micro-ROS and ROS2. 
+Low-cost educational robotics kit designed to teach users how to build a differential-drive robot and learn micro-ROS and ROS2 concepts. The kit includes embedded firmware, ROS2 packages and autonomous navigation examples.
+
+## What I did
+
+- Integrated the software components of the kit, focusing on micro-ROS and ROS2.
+- Developed embedded firmware for the robot microcontroller.
+- Built ROS2 packages for teleoperation, sensor integration and navigation.
+- Created learning materials and examples for educational use.
+
+## Technologies
+
+- ROS2
+- micro-ROS
+- C++ / C
+- Python
+- Differential-drive robot kinematics
+- Embedded systems
+
+## Demonstration
 
 <table>
   <tr>

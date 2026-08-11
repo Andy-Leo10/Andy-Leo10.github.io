@@ -2,35 +2,33 @@
 
 # Escalerini
 
-Many buildings in LATAM do not have elevators, it generates a big
-problem for people who have to carry products to their homes and have
-physical problems. ESCALERINI is an autonomous robot that can carry
-products up to 20 kg to the homes of people who live in buildings
-without elevators. This robot uses 2 locomotion subsystems, one for
-hallways and another for stairs.
+## Summary
+
+In many Latin American buildings there are no elevators, which makes it difficult for people with physical limitations to carry products to their homes. **Escalerini** is an autonomous robot designed to transport home products up to 20 kg through straight stairs in buildings without elevators. It uses two locomotion subsystems: one for hallways and another for stairs.
 
 ## Objectives
 
-This paper proposes an autonomous robot that can carry home products up to 20 kg through straight stairs. The specific objectives of the project focused on the following design requirements:
-
-- Ergonomic design for user to load and unload products
-- User ease of use
-- Control system to follow trajectories
-- Design suitable for going up and down straight stairs
+- Design an ergonomic load/unload system for users.
+- Build a control system capable of following trajectories on flat floors and stairs.
+- Implement safety mechanisms for autonomous stair climbing.
 
 ## Features
 
-- Maximum volume of products: 43.49 dm³
-- Robot size: 75.5 x 79 x 55 cm (H x L x W) when it is in ergonomic position
 - Maximum payload: 20 kg
 - Maximum speed: 0.75 m/s
 - Autonomy: 3 hours
-- Security system:
-  - Internal scale
-  - Emergency stop button
-  - Proximity sensors
-- Vision system: RGBD
-- Suitable algorithms for each type of motion
+- Security system: internal scale, emergency stop, proximity sensors
+- Vision system: RGBD camera
+- Motion algorithms adapted for hallway and stair motion
+
+## Publication
+
+This work was published at the **IEEE Colombian Caribbean Conference (C3 2025)** in Colombia.
+
+- **Paper:** Escalerini — a robot made for loading and transport of daily use products by stairs in buildings without elevators
+- **Link:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11340282)
+
+## Demonstrations
 
 Here are some demonstrative videos of the project:
 

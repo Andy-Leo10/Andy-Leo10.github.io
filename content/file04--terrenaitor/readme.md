@@ -2,7 +2,14 @@
 
 # Terrenaitor
 
-Project of the autonomous mobile robotics course. The robot uses semantic segmentation to be able to decide which direction to go inside the track.
+Project of the autonomous mobile robotics course. The robot uses semantic segmentation with a deep learning model to decide which direction to follow inside a racing track, avoiding obstacles and staying on the path.
+
+## Technologies
+
+- RPi3
+- Semantic segmentation
+- Deep learning (CNN/encoder)
+- Python
 
 Here is a video demonstration of the performance of Terrenaitor.
 

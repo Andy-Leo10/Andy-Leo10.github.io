@@ -2,84 +2,42 @@
 
 # WinkWink
 
-It is estimated that Dry Eye Syndrome (DES) affects
-approximately 2 billion people worldwide. WinkWink is
-introduced, an assistive technology that combines blink
-detection and feedback to promote healthier blinking
-habits during the use of electronic devices, thus
-counteracting tear evaporation and improving ocular
-comfort.
+## Summary
 
-![description: place](content/file06--winkwink/pictures/zippo-view.png)
+WinkWink is an assistive technology prototype designed to prevent and alleviate Dry Eye Syndrome (DES) in people who spend long hours in front of electronic devices. The device combines real-time blink detection with visual and sound feedback to promote healthier blinking habits and reduce tear evaporation.
 
-## Objectives
+## What I did
 
-Develop a portable assistive technology to prevent and alleviate the symptoms of Dry Eye Syndrome (DES) in users who spend long hours in front of electronic devices.
-
-The specific objectives of WinkWink focus on the following design requirements:
-
-- Detect blinks with an RGB camera, considering that blinks should be in a range between 12-15 times per minute and have a duration between 100ms to 400ms.
-- Show on a small screen the blink rate every 15 minutes.
-- Show on a small screen tips provided by ophthalmology specialists to prevent DES.
-- Sound a buzzer and show a message on a screen as an indication to take 5-minute breaks, after working more than 1 hour in front of electronic devices.
-
-![description: place](content/file06--winkwink/pictures/zippo-desktop.png)
+- Designed a portable spherical device with a 6 cm radius.
+- Implemented blink detection using an RGB camera and computer vision algorithms.
+- Developed a feedback system with OLED screens, a buzzer and a touch sensor.
+- Programmed two operation modes: concentration and companion.
+- Prototyped the electronics around a Raspberry Pi.
 
 ## Features
 
-- Size: spherical shape of 6cm radius.
-- Portable, can be connected to an external battery or micro USB cell phone charger.
-- Algorithms:
-  - Blink detection
-  - Face focus
-  - Gaze direction identification
-- Operating range: 30cm to 2m.
-- Alerts:
-  - Sounds: buzzer
-  - Visuals: Oled screens
-- Others: animated blinking eyes, active pause buzzer, tips shown on small screen, and blink report every 15 minutes.
+- Detects blinks in the range of 12 to 15 per minute, with durations between 100 ms and 400 ms.
+- Operating range: 30 cm to 2 m.
+- Animated eye expressions on an OLED display.
+- Visual tips and blink reports every 15 minutes.
+- Active pause reminder after 1 hour of continuous use.
+- **Concentration mode:** shows tips without disturbing the user.
+- **Companion mode:** counts blinks, reports blink rate every 15 minutes and suggests breaks.
 
-## Hardware
+## Technologies
 
-The hardware is observed in the figure below and its functions are as described:
+- Raspberry Pi
+- RGB camera
+- OpenCV / computer vision
+- Python
+- OLED displays
+- Buzzer
+- Touch sensor
 
-### RGB camera
-Takes photos constantly and must focus on the person using an electronic device.
+## Demonstration
 
-### Buzzer
-Makes a sound alert when it is necessary to notify the person if they are blinking in the corresponding range or not.
+![WinkWink prototype](content/file06--winkwink/pictures/zippo-view.png)
 
-### Raspberry Pi
-Processes the images and is the processing unit of WinkWink.
+![WinkWink desktop application](content/file06--winkwink/pictures/zippo-desktop.png)
 
-### Oled square display
-Shows eye expressions in WinkWink to be more attractive to the user.
-
-### Oled rectangular display
-Visually notifies the person of tips and if they are blinking in the corresponding range or not.
-
-### Touch sensor
-Allows the person to change the mode of operation of WinkWink by touching it.
-
-## Operation
-
-WinkWink has 2 modes to operate and be more flexible to the user, the modes are as follows:
-
-### Concentration mode
-When the user has or considers themselves with tasks that require high concentration, they can put WinkWink in this mode. In this mode, WinkWink will have an expression of being inactive, showing in each of its eyes a horizontal line and in the message screen will show a tip for the prevention of Dry Eye Syndrome. The tips are related to the following:
-
-- Do not use too much brightness on the screen.
-- Interval of adequate blinks per minute.
-- Breaks every hour, after continuous use of the computer.
-- Avoid very dry environments.
-- Avoid environments with smoke or dust.
-- Recommend seeing a specialist when you don't feel well.
-
-### Company mode
-In this mode, WinkWink repeats the following procedure:
-
-- Count blinks made every minute with the blink detector.
-- Every 15 minutes inform the percentage of blinks made, with respect to the recommended range. If the number of blinks is low, it will encourage the user to make a little more effort.
-- Every hour, it will indicate to the person to take a 5-minute break.
-
-![description: place](content/file06--winkwink/pictures/zippo-exploded-view.png)
+![WinkWink exploded view](content/file06--winkwink/pictures/zippo-exploded-view.png)

@@ -2,14 +2,24 @@
 
 # Bica
 
-This project was developed in the course of microcontrollers. The project consisted of developing a robot that could solve mazes, be used as a remote control car and be controlled by gestures.
+## Summary
 
-For each mode the robot uses something for achieve the goal:
-- For the maze mode, the robot uses a ultrasonic sensor to detect the free path.
-- For the remote control mode, the robot uses a radio frequency module to receive the commands.
-- For the gesture mode, the robot uses an analog accelerometer to detect the gestures.
-solve mazes.
+Academic project for the microcontrollers course. The robot has three operating modes: maze solver, remote-controlled car and gesture-controlled car.
 
-Here is a gif demonstration of the project:
+## What it does
 
-<img src="content/file01--bica/pictures/animation.gif" alt="Carrito GIF" width="80%">
+- **Maze mode:** uses an ultrasonic sensor to detect the free path and solve the maze.
+- **Remote control mode:** receives commands through a radio frequency module.
+- **Gesture mode:** uses an analog accelerometer to detect gestures and control the robot.
+
+## Technologies
+
+- C programming
+- Microcontroller
+- Ultrasonic sensor
+- Radio frequency module
+- Analog accelerometer
+
+## Demonstration
+
+<img src="content/file01--bica/pictures/animation.gif" alt="Bica robot demonstration" width="80%">
