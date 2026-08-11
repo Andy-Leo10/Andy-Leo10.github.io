@@ -139,7 +139,7 @@ export var cellModalData = [
     },
     // ------------------------------------------------------------------
     {
-        imageUrl: 'https://bulma.io/assets/images/placeholders/96x96.png',
+        imageUrl: 'content/file_kaia/pictures/lidar.png',
         projectName: 'LiDAR Open Source — kaia.ai',
         extraContent: 'Added support for the LDROBOT LD19P/D500 LiDAR sensor across the full open-source stack of kaia.ai / Maker\'s Pet: Arduino firmware, LDS library, and ROS2 telemetry.',
         mdFile: 'content/file_kaia/readme.md',
