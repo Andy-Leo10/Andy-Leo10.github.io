@@ -31,6 +31,18 @@ Developed a ROS2-based simulation of a **swerve-drive robot** for autonomous nav
 - URDF / robot modelling
 - Python, C++
 
+## Publication
+
+This work resulted in a paper published at **Ubiquitous Robotics (UR 2026)**, Osaka, Japan.
+
+- **Paper:** *Integrated Opposite-Phase Kinematics, Hybrid-A* Planning, and MPPI Control for Autonomous Navigation in Agricultural Environment*
+- **Conference:** Ubiquitous Robotics (UR 2026), Osaka, Japan
+- **Link:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11626756)
+
+### Abstract
+
+This paper presents a simulation framework for autonomous navigation of a swerve-drive mobile robot in structured agricultural environments, specifically blueberry crop fields. The proposed approach combines opposite-phase kinematics for the swerve-drive mechanism, Hybrid-A* path planning, and Model Predictive Path Integral (MPPI) control to achieve robust trajectory following. Localization is handled through an Extended Kalman Filter (EKF) fusing wheel odometry and IMU data. The system was validated in Gazebo Ignition, demonstrating reliable navigation along crop rows and laying the groundwork for future deployment in real Peruvian agricultural operations.
+
 ## Context
 
 This project was part of a state-funded research initiative aimed at introducing autonomous mobile robots into Peruvian agricultural operations to improve efficiency and reduce physical labour in fruit harvesting environments.
