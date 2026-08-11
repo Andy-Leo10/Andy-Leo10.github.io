@@ -10,7 +10,7 @@ habits during the use of electronic devices, thus
 counteracting tear evaporation and improving ocular
 comfort.
 
-![description: place](content/file6/pictures/zippo-view.png)
+![description: place](content/file06--winkwink/pictures/zippo-view.png)
 
 ## Objectives
 
@@ -23,7 +23,7 @@ The specific objectives of WinkWink focus on the following design requirements:
 - Show on a small screen tips provided by ophthalmology specialists to prevent DES.
 - Sound a buzzer and show a message on a screen as an indication to take 5-minute breaks, after working more than 1 hour in front of electronic devices.
 
-![description: place](content/file6/pictures/zippo-desktop.png)
+![description: place](content/file06--winkwink/pictures/zippo-desktop.png)
 
 ## Features
 
@@ -82,4 +82,4 @@ In this mode, WinkWink repeats the following procedure:
 - Every 15 minutes inform the percentage of blinks made, with respect to the recommended range. If the number of blinks is low, it will encourage the user to make a little more effort.
 - Every hour, it will indicate to the person to take a 5-minute break.
 
-![description: place](content/file6/pictures/zippo-exploded-view.png)
+![description: place](content/file06--winkwink/pictures/zippo-exploded-view.png)

@@ -7,7 +7,7 @@
 
 Added support for the **LDROBOT LD19P / D500 LiDAR sensor** across the full open-source stack of the [kaia.ai](https://kaia.ai/) / Maker's Pet project — a low-cost open-source robotics platform — complementing the educational robotics kit developed at Kalman Robotics.
 
-<img src="content/file_kaia/pictures/lidar.png" alt="LDROBOT LD19P/D500 LiDAR" width="100%"/>
+<img src="content/file19--kaia-lidar/pictures/lidar.png" alt="LDROBOT LD19P/D500 LiDAR" width="100%"/>
 
 **Date:** November 2025
 

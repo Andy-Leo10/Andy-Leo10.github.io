@@ -16,16 +16,16 @@ Here is a video demonstration of the assembly of the project:
 
 Here are some pictures of the work done in the project:results of the project:
 
-<img src="content/file3/pictures/prototype.jpg" alt="prototype" width="480"/>
+<img src="content/file03--loom-inspector/pictures/prototype.jpg" alt="prototype" width="480"/>
 <br>
-<img src="content/file3/pictures/cameras.jpg" alt="cameras" width="480"/>
+<img src="content/file03--loom-inspector/pictures/cameras.jpg" alt="cameras" width="480"/>
 <br>
-<img src="content/file3/pictures/interface_sim.jpg" alt="interface_sim" width="480"/>
+<img src="content/file03--loom-inspector/pictures/interface_sim.jpg" alt="interface_sim" width="480"/>
 <br>
-<img src="content/file3/pictures/interface_help.jpg" alt="interface_help" width="480"/>
+<img src="content/file03--loom-inspector/pictures/interface_help.jpg" alt="interface_help" width="480"/>
 <br>
-<img src="content/file3/pictures/assembly.jpg" alt="assembly" width="480"/>
+<img src="content/file03--loom-inspector/pictures/assembly.jpg" alt="assembly" width="480"/>
 <br>
-<img src="content/file3/pictures/loom_scan.png" alt="loom_scan" width="480"/>
+<img src="content/file03--loom-inspector/pictures/loom_scan.png" alt="loom_scan" width="480"/>
 <br>
-<img src="content/file3/pictures/interface_real.jpg" alt="image6" width="480"/>
+<img src="content/file03--loom-inspector/pictures/interface_real.jpg" alt="image6" width="480"/>

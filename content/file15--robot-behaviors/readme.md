@@ -8,12 +8,12 @@ The Rosbot-XL required the design of behaviors so that it has the ability to ada
 
 Here is a video demonstration of the project:
 <video width="100%" controls>
-  <source src="content/file15/pictures/video.mp4" type="video/mp4">
+  <source src="content/file15--robot-behaviors/pictures/video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 Here is an image of the behavior tree:
 
-![Tree](content/file15/pictures/tree.jpg)
+![Tree](content/file15--robot-behaviors/pictures/tree.jpg)
 
 ---

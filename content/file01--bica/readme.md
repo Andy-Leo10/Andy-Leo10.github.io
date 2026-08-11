@@ -12,4 +12,4 @@ solve mazes.
 
 Here is a gif demonstration of the project:
 
-<img src="content/file1/pictures/animation.gif" alt="Carrito GIF" width="80%">
+<img src="content/file01--bica/pictures/animation.gif" alt="Carrito GIF" width="80%">

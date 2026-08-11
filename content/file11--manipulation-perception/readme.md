@@ -88,17 +88,17 @@ ros2 run gazebo_ros spawn_entity.py -file /home/user/ros2_ws/src/manipulation_pr
 ```
 
 ### Perception
-![description: perception](content/file11/pictures/perception.png)
+![description: perception](content/file11--manipulation-perception/pictures/perception.png)
 
 ### Pick
-![description: pick](content/file11/pictures/pick.png)
+![description: pick](content/file11--manipulation-perception/pictures/pick.png)
 
 ### Place
-![description: place](content/file11/pictures/place.png)
+![description: place](content/file11--manipulation-perception/pictures/place.png)
 
 ### Recording
 
 <video width="100%" controls>
-    <source src="content/file11/pictures/recording.mp4" type="video/mp4">
+    <source src="content/file11--manipulation-perception/pictures/recording.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
