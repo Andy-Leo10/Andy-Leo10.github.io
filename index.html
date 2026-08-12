@@ -48,12 +48,13 @@
                 <div class="card">
                     <div class="card-content">
 
-                        <!-- create tabs: about, resume, portafolio -->
+                        <!-- create tabs: about, resume, publications, portafolio -->
                         <div class="tabs is-centered is-boxed">
                             <ul>
                                 <li data-target="pane-1"><a class="is-size-4">About</a></li>
                                 <li data-target="pane-2"><a class="is-size-4">Resume</a></li>
-                                <li class="is-active" data-target="pane-3"><a class="is-size-4">Portfolio</a></li>
+                                <li data-target="pane-3"><a class="is-size-4">Publications</a></li>
+                                <li class="is-active" data-target="pane-4"><a class="is-size-4">Portfolio</a></li>
                             </ul>
                         </div>
 
@@ -86,8 +87,18 @@
 
 
                             <!-- tab 3 -->
-                            <!-- <div class="tab-pane" id="pane-3"> -->
-                            <div class="tab-pane" id="pane-3">
+                            <div class="tab-pane" id="pane-3" style="display: none;">
+                                <div class="block">
+                                    <div id="publicationsContainer">
+                                        <!-- Publications will be loaded here!!! EYE -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of tab 3 -->
+
+
+                            <!-- tab 4 -->
+                            <div class="tab-pane" id="pane-4">
                                 <div class="block">
                                     <nav class="pagination" role="navigation" aria-label="pagination">
                                         <a class="pagination-previous" id="prev-page">Previous</a>
@@ -103,7 +114,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- end of tab 3 -->
+                            <!-- end of tab 4 -->
 
 
                         </div>
@@ -123,6 +134,7 @@
     <script src="js/tabs.js"></script>
     <script src="js/loadAbout.js"></script>
     <script src="js/loadResume.js"></script>
+    <script src="js/loadPublications.js"></script>
     <script src="js/timelineToggle.js"></script>
 
 </body>
