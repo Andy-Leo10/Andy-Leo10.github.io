@@ -152,7 +152,23 @@ export var cellModalData = [
         extraContent: 'ROS2 simulation of a swerve-drive robot in Gazebo Ignition for blueberry crop fields. Autonomous navigation with Nav2, wheel odometry and EKF-based localization. PROCIENCIA project N° PE501086701-2024.',
         mdFile: 'content/file19--upao-agricultural-robot/readme.md',
         id: 19
-    },        
+    },
+    // ------------------------------------------------------------------
+    {
+        imageUrl: 'content/file20--car-damage-segmentation/pictures/result.png',
+        projectName: 'Car Damage Segmentation',
+        extraContent: 'Computer vision system for automatic vehicle damage inspection: YOLOv11-seg detects the cars, a custom-trained DeepLabV3 segments the damaged areas.',
+        mdFile: 'content/file20--car-damage-segmentation/readme.md',
+        id: 20
+    },
+    // ------------------------------------------------------------------
+    {
+        imageUrl: 'content/file21--hyper-personalized-emails/pictures/result.png',
+        projectName: 'Hyper-personalized Emails',
+        extraContent: 'Multi-agent system that generates hyper-personalized marketing emails with AI-generated images, 100% locally: 3 LLM agents and image generation with Z-Image-Turbo.',
+        mdFile: 'content/file21--hyper-personalized-emails/readme.md',
+        id: 21
+    },
     // ------------------------------------------------------------------
     // {
     //     imageUrl: 'https://bulma.io/assets/images/placeholders/96x96.png',
