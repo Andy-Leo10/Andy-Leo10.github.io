@@ -34,4 +34,4 @@ The kaia.ai / Maker's Pet platform is a community-driven project for building af
 - [kaia-firmware](https://github.com/Andy-Leo10/kaia-firmware)
 - [kaia-kaiaai_telemetry](https://github.com/Andy-Leo10/kaia-kaiaai_telemetry)
 
-<img src="content/file19--kaia-lidar/pictures/lidar.png" alt="LDROBOT LD19P/D500 LiDAR" width="100%"/>
+<img src="content/file18--kaia-lidar/pictures/lidar.png" alt="LDROBOT LD19P/D500 LiDAR" width="100%"/>

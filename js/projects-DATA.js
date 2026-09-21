@@ -139,18 +139,18 @@ export var cellModalData = [
     },
     // ------------------------------------------------------------------
     {
-        imageUrl: 'content/file19--kaia-lidar/pictures/lidar.png',
+        imageUrl: 'content/file18--kaia-lidar/pictures/lidar.png',
         projectName: 'LiDAR Open Source — kaia.ai',
         extraContent: 'Added support for the LDROBOT LD19P/D500 LiDAR sensor across the full open-source stack of kaia.ai / Maker\'s Pet: Arduino firmware, LDS library, and ROS2 telemetry.',
-        mdFile: 'content/file19--kaia-lidar/readme.md',
+        mdFile: 'content/file18--kaia-lidar/readme.md',
         id: 18
     },
     // ------------------------------------------------------------------
     {
-        imageUrl: 'content/file18--upao-agricultural-robot/pictures/robot.png',
+        imageUrl: 'content/file19--upao-agricultural-robot/pictures/robot.png',
         projectName: 'Agricultural Robot — UPAO',
         extraContent: 'ROS2 simulation of a swerve-drive robot in Gazebo Ignition for blueberry crop fields. Autonomous navigation with Nav2, wheel odometry and EKF-based localization. PROCIENCIA project N° PE501086701-2024.',
-        mdFile: 'content/file18--upao-agricultural-robot/readme.md',
+        mdFile: 'content/file19--upao-agricultural-robot/readme.md',
         id: 19
     },        
     // ------------------------------------------------------------------
